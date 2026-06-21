@@ -16,7 +16,7 @@ const Hero = ({children ,image, text = "light" }) => {
         <h2 className={`${colorStyles[text]} md:text-white text-4xl font-bold md:shadow-lg`}>
           Layanan Terapi Terpercaya
         </h2>
-        <p className="mt-4 text-md px-3 text-sm md:text-xl font-semibold text-white md:text-gray-100 max-w-3xl drop-shadow-md">
+        <p className="mt-4 text-md px-3 text-sm md:text-xl font-bold text-white md:text-gray-100 max-w-3xl drop-shadow-md">
           {children}
         </p>
         <div className="mt-8 flex flex-col md:flex-row gap-4">

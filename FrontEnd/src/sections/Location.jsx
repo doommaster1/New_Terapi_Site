@@ -71,9 +71,9 @@ const Location = () => {
               rel="noopener noreferrer"
               className="block w-full"
             >
-              <Button className="w-full flex justify-center items-center gap-2">
-                <MessageCircle size={20} />
-                Hubungi via WhatsApp
+              <Button className="w-full flex items-center justify-center gap-2">
+                <MessageCircle size={18} className="relative top-[1px]" />
+                <span>Hubungi via WhatsApp</span>
               </Button>
             </a>
           </div>

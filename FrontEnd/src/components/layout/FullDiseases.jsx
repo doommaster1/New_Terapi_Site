@@ -108,7 +108,7 @@ export default function FullDiseases() {
   return (
     <section className="bg-linear-to-r from-[#ffffff] from-10% via-[#fff8f1] via-30% to-[#ffe8d6] to-90% py-12">
       <div className="flex mt-52 justify-center items-center text-center max-w-6xl mx-auto flex-col mb-2">
-        <div className="mb-8">
+        <div className="mb-8 p-5">
           <h1 className="font-bold text-3xl mb-4 text-[#e17100]">
             Penyakit yang diatasi
           </h1>

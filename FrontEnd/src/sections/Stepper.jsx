@@ -36,7 +36,7 @@ const Stepper = () => {
   ];
 
   return (
-    <div className="w-full py-32 max-w mx-auto px-6 bg-gradient-to-b from-white via-[#fafbfd] to-[#dbe9f2] flex justify-center items-center flex-col">
+    <div className="w-full md:py-32 max-w mx-auto px-6 bg-gradient-to-b from-white via-[#fafbfd] to-[#dbe9f2] flex justify-center items-center flex-col">
       {/* Judul Section */}
       <div className="text-center mb-16">
         <h2 className="text-3xl font-bold text-black mb-4">Cara Kerja Kami</h2>

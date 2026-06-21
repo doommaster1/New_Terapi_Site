@@ -33,7 +33,7 @@ export default function Testimonial() {
   ];
 
   return (
-    <section className="flex justify-center flex-col py-44 mb-52 p-5 w-full max-w-full bg-linear-to-b from-[#fff8f1] from-0% to-[#ffe8d6] to-90%">
+    <section className="flex justify-center flex-col md:py-44 mb-52 p-5 w-full max-w-full bg-linear-to-b from-[#fff8f1] from-0% to-[#ffe8d6] to-90%">
       {/* Bagian Judul */}
       <div className="max-w-7xl mx-auto">
       <div className="text-center mb-10">

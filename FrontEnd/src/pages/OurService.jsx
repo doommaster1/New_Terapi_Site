@@ -24,16 +24,14 @@ const OurService = () => {
           </h1>
         </div>
         {/* Bagian dengan Background Wave */}
-        <div className="relative overflow-hidden w-full pb-10">
+        <div className="relative overflow-hidden w-full md:pb-10">
           {" "}
-          {/* Tambahan pb-10 agar konten tidak terlalu mepet dengan gelombang bawah */}
-          {/* 1. BACKGROUND SVG (Dipindah ke atas dan dipin ke bawah) */}
           <div className="hidden absolute bottom-0 left-0 w-full h-full z-0 md:flex items-end">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 1440 320"
               className="w-full h-full"
-              preserveAspectRatio="none" /* Membantu SVG meregang full width & height */
+              preserveAspectRatio="none" 
             >
               <path
                 fill="#e17100"
@@ -42,7 +40,6 @@ const OurService = () => {
               ></path>
             </svg>
           </div>
-          {/* 2. KONTEN (Ditambah relative dan z-10 agar berada di atas background) */}
           <div className="grid grid-cols-1 w-full md:grid-cols-4 place-items-center p-6 gap-4 relative z-10">
             <div className="grid self-start justify-items-center md:col-span-2 text-center md:text-left">
               <p className="font-extralight text-[#130f40] mb-4 p-3 text-lg bg-white/50 backdrop-blur-sm rounded-xl md:bg-transparent md:backdrop-blur-none text-left">
@@ -54,7 +51,7 @@ const OurService = () => {
               </p>
             </div>
 
-            <div className="bg-[#badc58] flex flex-col justify-center items-center p-2 md:p-6 h-auto w-full md:col-span-1 rounded-2xl shadow-lg min-h-88">
+            <div className="bg-[#badc58] flex flex-col justify-center items-center p-2 md:p-6 h-75 md:h-auto w-full md:col-span-1 rounded-2xl shadow-lg min-h-80 md:min-h-88">
               <Worm className="mb-4 text-4xl text-white" size={52} />
               <h1 className="font-bold text-3xl text-white">Terapi Lintah</h1>
               <p className="text-center text-white px-4 py-6 font-medium">
@@ -65,7 +62,7 @@ const OurService = () => {
               </p>
             </div>
 
-            <div className="bg-[#eb4d4b] flex flex-col justify-center items-center p-2 md:p-6 h-auto w-full md:col-span-1 rounded-2xl shadow-lg min-h-88">
+            <div className="bg-[#eb4d4b] flex flex-col justify-center items-center p-2 md:p-6 h-75 md:h-auto w-full md:col-span-1 rounded-2xl shadow-lg min-h-80 md:min-h-88">
               <Siren className="mb-4 text-white" size={52} />
               <h1 className="font-bold text-3xl text-white">Bekam</h1>
               <p className="text-center text-white px-4 py-6 font-medium">

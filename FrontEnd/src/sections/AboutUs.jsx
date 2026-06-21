@@ -26,7 +26,7 @@ const AboutUs = () => {
                   <CalendarHeart />
                 </span>
               </h3>
-              <p className="md:mt-4 mb-6 text-md md:text-xl text-gray-700 leading-relaxed text-justify w-full max-w-md">
+              <p className="md:mt-4 md:mb-6 text-md md:text-xl text-gray-700 leading-relaxed text-justify w-full max-w-md">
                 Kami percaya kesehatan yang baik dimulai dari perawatan tubuh
                 yang tepat. Melalui terapi lintah yang aman dan higienis, kami
                 membantu Anda menjaga kebugaran, meningkatkan kenyamanan tubuh,
@@ -35,24 +35,28 @@ const AboutUs = () => {
               <Button className="w-fit">Learn More</Button>
             </div>
 
-            <div className="grid grid-cols-2 gap-4 order-first md:order-last">
-              <div class>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 order-first md:order-last">
+              {/* Gambar utama */}
+              <div>
                 <img
                   src={mama}
-                  alt="Lintah"
-                  className="w-full max-w-[24rem] h-auto object-cover rounded-xl shadow-md"
+                  alt="Terapi lintah"
+                  className="w-full h-[350px] object-cover rounded-xl shadow-md object-top"
                 />
               </div>
-              <div className="grid grid-rows-2 place-items-center gap-y-5">
+
+              {/* Dua gambar samping */}
+              <div className="grid grid-cols-2 md:grid-cols-1 gap-4">
                 <img
                   src={lokasi1}
-                  alt="Lintah"
-                  className="w-full min-w-90 h-auto object-cover rounded-xl shadow-md"
+                  alt="Lokasi terapi 1"
+                  className="w-full h-full object-cover rounded-xl shadow-md"
                 />
+
                 <img
                   src={lokasi2}
-                  alt="Lintah"
-                  className="w-full min-w-90 h-auto object-cover rounded-xl shadow-md"
+                  alt="Lokasi terapi 2"
+                  className="w-full h-full object-cover rounded-xl shadow-md"
                 />
               </div>
             </div>
