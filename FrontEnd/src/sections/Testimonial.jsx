@@ -3,8 +3,8 @@ export default function Testimonial() {
   const testimonials = [
     {
       id: 1,
-      name: "SAINEM WIYONO",
-      text: "Sangat membantu.. malam2 butuh obat, gak perlu keluar rumah.",
+      name: "AJI LAKSONO",
+      text: "Terapinya bagus pelayanan juga,rekomendasi banget.",
       // Menggunakan placeholder image untuk contoh, nanti bisa diganti dengan URL foto asli
       image:
         "https://ui-avatars.com/api/?name=Sainem+Wiyono&background=e17100&color=fff",

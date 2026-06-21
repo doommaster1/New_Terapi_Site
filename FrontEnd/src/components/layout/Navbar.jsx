@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = ({ text = "dark", scroll = "dark" }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -7,21 +8,19 @@ const Navbar = ({ text = "dark", scroll = "dark" }) => {
 
   const base = "flex flex-col md:flex-row md:space-x-8";
 
-    const textStyles = {
+  const textStyles = {
     dark: "text-gray-900",
     light: "text-white",
   };
 
   const scrollStyles = {
     dark: "text-gray-900",
-    light: "text-white"
+    light: "text-white",
   };
 
-  
   const isNavActive = isScrolled || isOpen;
-  
-  const activeColor = isNavActive ? scrollStyles[scroll] : textStyles[text]
 
+  const activeColor = isNavActive ? scrollStyles[scroll] : textStyles[text];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,13 +42,16 @@ const Navbar = ({ text = "dark", scroll = "dark" }) => {
           isNavActive
             ? `bg-white shadow-md mt-2 py-2 ${activeColor}` // Tampilan saat di-scroll
             : `bg-transparent mt-6 py-4 ${activeColor}` // Tampilan awal
-        } rounded-2xl`} id="nav"
+        } rounded-2xl`}
+      id="nav"
     >
       <div className="w-full flex flex-wrap items-center justify-between mx-auto p-4">
         <Link to="/">
-        <h1 className={`space-x-3 font-bold text-md md:text-xl ${activeColor}`}>
-          Terapi Lintah Mekarsari Depok
-        </h1>
+          <h1
+            className={`space-x-3 font-bold text-md md:text-xl ${activeColor}`}
+          >
+            Terapi Lintah Mekarsari Depok
+          </h1>
         </Link>
 
         {/* hamburger button */}
@@ -88,10 +90,10 @@ const Navbar = ({ text = "dark", scroll = "dark" }) => {
         >
           <ul className={`${base} ${activeColor}`}>
             <li className="block py-2 px-3 rounded duration-200 hover:text-amber-600 ease-in md:p-0 w-full whitespace-nowrap">
-              <Link to="/">Home</Link>
+              <HashLink smooth to="/#home">Home</HashLink>
             </li>
             <li className="block py-2 px-3 rounded duration-200 hover:text-amber-600 ease-in md:p-0 w-full whitespace-nowrap">
-              <Link to="/OurService">Our Service</Link>
+              <HashLink smooth to="/OurService#service_page">Our Service</HashLink>
             </li>
           </ul>
         </div>

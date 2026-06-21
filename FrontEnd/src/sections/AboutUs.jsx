@@ -4,6 +4,7 @@ import leech from "../img/leech.jpg";
 import mama from "../img/mama_jelek.jpg";
 import lokasi1 from "../img/terapi1.jpg";
 import lokasi2 from "../img/terapi2.jpg";
+import { Link } from "react-router-dom"
 
 const AboutUs = () => {
   return (
@@ -32,7 +33,9 @@ const AboutUs = () => {
                 membantu Anda menjaga kebugaran, meningkatkan kenyamanan tubuh,
                 dan menjalani aktivitas dengan lebih optimal.
               </p>
+              <Link to ="/OurService">
               <Button className="w-fit">Learn More</Button>
+              </Link>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 order-first md:order-last">

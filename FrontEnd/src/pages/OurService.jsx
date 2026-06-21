@@ -4,10 +4,29 @@ import Hero from "../sections/Hero";
 import FullDiseases from "../components/layout/FullDiseases";
 import waterfallimg from "../img/waterfall.jpg";
 import Navbar from "../components/layout/Navbar";
+import { HashLink } from "react-router-hash-link";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const OurService = () => {
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace("#", "");
+      const element = document.getElementById(id);
+      
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 100); 
+      }
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [location]);
+
   return (
-    <div className="w-full overflow-hidden ">
+    <div className="w-full overflow-hidden"
+    id="service_page">
       <Navbar text="light" scroll="dark" />
       <Hero image={waterfallimg}>
         Dari terapi lintah hingga penanganan berbagai kondisi kesehatan, kami

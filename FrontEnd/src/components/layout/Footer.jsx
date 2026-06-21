@@ -30,7 +30,7 @@ const Footer = () => {
             </li>
 
             <li>
-              <HashLink smooth to="/#layanans">
+              <HashLink smooth to="/OurService#layanans">
                 Layanan Kami
               </HashLink>
             </li>

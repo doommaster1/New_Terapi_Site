@@ -1,7 +1,8 @@
 import Button from "../components/common/Button";
 import { HeartPulse, Bone, Brain, Droplet, Cross, Bandage } from "lucide-react";
 import leech from "../img/leech.jpg";
-
+import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 const Disease = () => {
   return (
@@ -30,7 +31,15 @@ const Disease = () => {
                 keahlian kami dalam membantu ribuan pasien mencapai pemulihan
                 kesehatan yang optimal."
               </p>
-              <Button>Learn More</Button>
+              <Link
+                to="/OurService#layanans"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button>
+                  Learn More
+                </Button>
+              </Link>
             </div>
 
             <div className="flex justify-center md:justify-end">
@@ -56,9 +65,7 @@ const Disease = () => {
               <div>
                 <HeartPulse className="text-center" size={42} color="#e17100" />
               </div>
-              <h1 className="font-bold py-2 text-xl">
-                Pernapasan & Jantung
-              </h1>
+              <h1 className="font-bold py-2 text-xl">Pernapasan & Jantung</h1>
               <p className="pb-4 text-sm">
                 Terapi pendukung untuk membantu mengurangi keluhan terkait
                 saraf, keseimbangan tubuh, dan gangguan neurologis tertentu.
@@ -68,9 +75,7 @@ const Disease = () => {
               <div>
                 <Brain className="text-center" size={42} color="#e17100" />
               </div>
-              <h1 className="font-bold py-2 text-xl">
-                Saraf & Neurologi
-              </h1>
+              <h1 className="font-bold py-2 text-xl">Saraf & Neurologi</h1>
               <p className="pb-4 text-sm">
                 Membantu mendukung kesehatan sistem pernapasan dan sirkulasi
                 darah untuk meningkatkan kenyamanan serta kualitas aktivitas
@@ -93,9 +98,7 @@ const Disease = () => {
               <div>
                 <Droplet className="text-center" size={42} color="#e17100" />
               </div>
-              <h1 className="font-bold py-2 text-xl">
-                Diabetes & Metabolik
-              </h1>
+              <h1 className="font-bold py-2 text-xl">Diabetes & Metabolik</h1>
               <p className="pb-4 text-sm">
                 Pendekatan terapi alami untuk membantu menjaga sirkulasi darah
                 dan mendukung kesehatan metabolisme tubuh.

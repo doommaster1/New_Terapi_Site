@@ -64,7 +64,6 @@ const Location = () => {
 
           {/* Tombol CTA WhatsApp */}
           <div className="pt-4">
-            {/* Bungkus Button dengan tag <a> */}
             <a
               href="https://wa.me/6285770171153?text=Halo%20Admin,%20saya%20ingin%20konsultasi%20mengenai%20Terapi%20Lintah."
               target="_blank"
