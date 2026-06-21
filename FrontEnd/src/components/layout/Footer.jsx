@@ -57,7 +57,7 @@ const Footer = () => {
             </li>
             <li className="flex items-center gap-2 pb-2">
               <Mail color="#e17100" size={23} />
-              terapi@email.com
+              stefanusslamer66@gmail.com
             </li>
             <li className="flex items-center gap-2 pb-2">
               <Clock color="#e17100" size={23} /> Senin - Sabtu (09.00 - 20.00)
@@ -115,7 +115,7 @@ const Footer = () => {
           </p>
 
           <p className="mt-3">
-            © 2026 Terapi Lintah Sehat. All rights reserved.
+            © 2026 Stefanus Anthony Harry. All rights reserved.
           </p>
         </div>
       </div>
