@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-      <Hero image={mountainImg} text="dark">
+      <Hero image={mountainImg} text="dark" link="home">
         Membantu melancarkan sirkulasi darah dan mengatasi berbagai keluhan
         kesehatan dengan teknik terapi tradisional yang higienis di Depok.
       </Hero>

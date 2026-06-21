@@ -28,7 +28,7 @@ const OurService = () => {
     <div className="w-full overflow-hidden"
     id="service_page">
       <Navbar text="light" scroll="dark" />
-      <Hero image={waterfallimg}>
+      <Hero image={waterfallimg} link="service">
         Dari terapi lintah hingga penanganan berbagai kondisi kesehatan, kami
         menghadirkan layanan yang aman, higienis, dan disesuaikan dengan
         kebutuhan setiap pasien.

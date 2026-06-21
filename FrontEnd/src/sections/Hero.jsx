@@ -1,10 +1,15 @@
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-const Hero = ({ children, image, text = "light" }) => {
+const Hero = ({ children, image, text = "light", link}) => {
   const colorStyles = {
     dark: "text-gray-900",
     light: "text-white",
   };
+
+  const links = {
+    home: "/OurService#service_page",
+    service: "/OurService#layanans"
+  }
 
   return (
     <div
@@ -35,7 +40,7 @@ const Hero = ({ children, image, text = "light" }) => {
               </button>
             </a>
           </div>
-          <HashLink smooth to="/OurService#service_page">
+          <HashLink smooth to={links[link]}>
             <button className="px-8 py-3 bg-white/20 hover:bg-white/30 text-white font-bold rounded-full backdrop-blur-sm border border-white/50 transition-all">
               Lihat Layanan
             </button>
