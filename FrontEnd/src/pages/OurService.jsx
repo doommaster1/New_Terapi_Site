@@ -1,12 +1,9 @@
-import { Worm } from "lucide-react";
-import { Siren } from "lucide-react";
-import Hero from "../sections/Hero";
-import FullDiseases from "../components/layout/FullDiseases";
-import waterfallimg from "../img/waterfall.jpg";
-import Navbar from "../components/layout/Navbar";
-import { HashLink } from "react-router-hash-link";
+import { Siren, Worm } from "lucide-react";
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import FullDiseases from "../components/layout/FullDiseases";
+import Navbar from "../components/layout/Navbar";
+import waterfallimg from "../img/waterfall.jpg";
+import Hero from "../sections/Hero";
 
 const OurService = () => {
   useEffect(() => {
@@ -70,7 +67,7 @@ const OurService = () => {
               </p>
             </div>
 
-            <div className="bg-[#badc58] flex flex-col justify-center items-center p-2 md:p-6 h-75 md:h-auto w-full md:col-span-1 rounded-2xl shadow-lg min-h-80 md:min-h-88">
+            <div className="self-stretch bg-[#badc58] flex flex-col justify-center items-center p-2 md:p-6 w-full md:col-span-1 rounded-2xl shadow-lg min-h-80 md:min-h-88">
               <Worm className="mb-4 text-4xl text-white" size={52} />
               <h1 className="font-bold text-3xl text-white">Terapi Lintah</h1>
               <p className="text-center text-white px-4 py-6 font-medium">
@@ -81,7 +78,7 @@ const OurService = () => {
               </p>
             </div>
 
-            <div className="bg-[#eb4d4b] flex flex-col justify-center items-center p-2 md:p-6 h-75 md:h-auto w-full md:col-span-1 rounded-2xl shadow-lg min-h-80 md:min-h-88">
+            <div className="self-stretch bg-[#eb4d4b] flex flex-col justify-center items-center p-2 md:p-6 w-full md:col-span-1 rounded-2xl shadow-lg min-h-80 md:min-h-88">
               <Siren className="mb-4 text-white" size={52} />
               <h1 className="font-bold text-3xl text-white">Bekam</h1>
               <p className="text-center text-white px-4 py-6 font-medium">
